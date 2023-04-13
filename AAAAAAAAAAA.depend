@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1681349900 source:c:\users\jefferson teles\desktop\finway\aaaaaaaaaaa\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+
