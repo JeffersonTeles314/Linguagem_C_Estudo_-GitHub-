@@ -4,10 +4,10 @@
 int main()
 {
     setlocale(LC_ALL, "Portuguese");
-    int acai_jubs;
+    int qv;
     printf("Quantos Açaí Jubiscreuda Vendeu:");
-    scanf("%i", &acai_jubs);
+    scanf("%i", &qv);
     float valor_custo = 2.5 * 100;
-    float lucro = (acai_jubs * 8) - valor_custo;
+    float lucro = (qv * 8) - valor_custo;
     printf("Jubiscreuda Lucrou %f Unidades Monetárias",lucro);
 }
