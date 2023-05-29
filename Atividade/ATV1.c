@@ -2,8 +2,16 @@
 
 int main()
 {
-    //OBS*: Você Não Pediu o Input das Notas :)
-    float notas[] = {10, 10, 10, 10};
+    int nota1,nota2,nota3,nota4;
+    printf("Digite a nota 1 do aluno: ");
+    scanf("%d",&nota1);
+    printf("Digite a nota 2 do aluno: ");
+    scanf("%d",&nota2);
+    printf("Digite a nota 3 do aluno: ");
+    scanf("%d",&nota3);
+    printf("Digite a nota 4 do aluno: ");
+    scanf("%d",&nota4);
+    float notas[] = {nota1, nota2, nota3, nota4};
     float media = (notas[0] + notas[1] + notas[2] + notas[3])/4;
     if (media >= 6 && media <= 10){
         printf("Está Aprovado(a), Não Fez Mais que Sua Obrigação");
