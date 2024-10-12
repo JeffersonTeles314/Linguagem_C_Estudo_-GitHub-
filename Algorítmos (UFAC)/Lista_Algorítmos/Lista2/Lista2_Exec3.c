@@ -1,0 +1,26 @@
+// Nome do Aluno(a): Jefferson Vasconcelos Teles de Almeida
+// Disciplina......: CCET005 - Algoritmos e Linguagem de Programação
+// IFES............: Universidade Federal do Acre
+// Data............: 25/10/2024				Hora:
+// Nome do Programa: Lista2_Exec3.c
+
+#include <stdio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main(void)
+{   setlocale(LC_ALL, "Portuguese");
+    int    i, n;
+    float soma;
+    
+    printf("Entre com o Valor de n: \n");\
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++)
+    {
+        soma = soma + (1.0/i);
+    }
+    printf("O Valor da soma e: %f", soma);\
+    getch();
+    return 0;
+}
