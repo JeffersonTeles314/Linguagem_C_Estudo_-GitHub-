@@ -2,25 +2,28 @@
 // Disciplina......: CCET005 - Algoritmos e Linguagem de Programação
 // IFES............: Universidade Federal do Acre
 // Data............: 25/10/2024				Hora:
-// Nome do Programa: Lista4_Exec2.c
+// Nome do Programa: Lista4_Exec1.c
 
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-void main(void)
-{   int    n , i , aux;
+#include <math.h>
+
+int main(void)
+{   int   i, aux ;
     float  soma;
 
-    printf("\n\n    Calculando o Somatorio");
+    printf("Calculando o Somatorio\n");
 
-    printf("\n\n    Entre com o N:");
-    scanf("%d" , &n);
+    aux = 50;
     soma = 0.0;
-    for( i=1 ; i<=n ; i++)
+    for(i=1 ; i<=50 ; i++)
     {
-        soma = soma + i/((n+1.0)-i);
+        soma = soma + (pow(2,i)/aux);
+        aux = aux - 1;
     }
-    printf("\n\n   O somatorio = %f" , soma);
+    printf("O Somatório é = %f" , soma);
 
     getch();
+    return 0;
 }

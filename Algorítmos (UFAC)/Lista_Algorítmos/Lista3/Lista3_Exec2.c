@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-void main(void)
+int main(void)
 {   int a[4][4],at[4][4],i,j;
     printf("\n\n    Entre com a matriz A:\n");
     for( i=0 ; i<=3 ; i++  )
@@ -36,8 +36,6 @@ void main(void)
         printf("\n\n\n");
     }
 
-
-
     getch();
-
+    return 0;
 }
