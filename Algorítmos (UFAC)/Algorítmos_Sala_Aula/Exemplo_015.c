@@ -15,11 +15,11 @@ main()
         scanf("%f",&val);
         if(val < 0.0)
         {
-            break; // saída do laço
+            break; // saÃ­da do laÃ§o
         }
         num++;
         soma = soma + val;
     }while(1);                           // sempre verdadeiro
-    printf("\n\n Média: %f",soma/num);
+    printf("\n\n Mï¿½dia: %f",soma/num);
     getch();
 }

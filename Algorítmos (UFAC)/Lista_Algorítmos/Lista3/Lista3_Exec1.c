@@ -2,14 +2,14 @@
 // Disciplina......: CCET005 - Algoritmos e Linguagem de Programação
 // IFES............: Universidade Federal do Acre
 // Data............: 25/10/2024				Hora:
-// Nome do Programa: Lista3_Exec2.c
+// Nome do Programa: Lista3_Exec1.c
 
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 int main(void)
-{   int a[4][4],at[4][4],i,j;
-    printf("\n\n    Entre com a matriz A:\n");
+{   int a[4][4],b[4][4],c[4][4],i,j;
+    printf("Entre com a matriz A:\n");
     for( i=0 ; i<=3 ; i++  )
     {   for( j=0 ; j<=3 ; j++ )
         {
@@ -17,29 +17,29 @@ int main(void)
         }
     }
 
+        printf("Entre com a matriz B:\n");
     for( i=0 ; i<=3 ; i++  )
     {   for( j=0 ; j<=3 ; j++ )
         {
-            printf(" %2d " , a[i][j]);
+            scanf("%d" , &b[i][j]);
+        }
+    }
+
+    printf("Somando Matrizes");
+    for( i=0 ; i<=3 ; i++  )
+    {   for( j=0 ; j<=3 ; j++ )
+        {
+            c[i][j] = a[i][j] + b[i][j];
         }
         printf("\n\n");
     }
-
-
-    printf("\n\n    Obtendo a matriz transposta");
+    printf("Exibindo a matriz soma\n\n");
     for( i=0 ; i<=3 ; i++  )
     {   for( j=0 ; j<=3 ; j++ )
         {
-            at[i][j]=a[j][i];
+            printf(" %2d " , c[i][j]);
         }
-    }
-    printf("\n    Exibindo a matriz transposta\n\n");
-    for( i=0 ; i<=3 ; i++  )
-    {   for( j=0 ; j<=3 ; j++ )
-        {
-            printf(" %2d   " , at[i][j]);
-        }
-        printf("\n\n\n");
+        printf("\n");
     }
 
     getch();

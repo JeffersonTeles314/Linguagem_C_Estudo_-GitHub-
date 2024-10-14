@@ -11,11 +11,26 @@
 int main(void)
 {   int a[7][7],i,j;
     
-    printf("\n\n    Entre com a matriz A:\n");
+    printf("Gerando a Matriz de PAscal de Ordem 7:\n");
     for( i=0 ; i<=6 ; i++  )
     {   for( j=0 ; j<=6 ; j++ )
         {
-            // TODO: Terminar de preencher a matriz
+            if (i==j || j==0)
+            {
+                a[i][j] = 1;
+            }
+            else
+            {
+                if (i<j)
+                {
+                    a[i][j] = 0;
+                }
+                else
+                {
+                    a[i][j] = a[i-1][j-1] + a[i-1][j];
+                }
+                
+            }
         }
     }
     printf("\n\n    Exibindo a matriz\n\n");
@@ -23,11 +38,10 @@ int main(void)
     {
         for (j = 0; j <= 6; j++)
         {
-            printf(" %2d   " , a[i][j]);
+            printf(" %2d " , a[i][j]);
         }
-        printf("\n\n\n");
+        printf("\n");
     }
-    
     getch();
     return 0;
 }
