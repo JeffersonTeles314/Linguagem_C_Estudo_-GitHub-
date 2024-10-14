@@ -2,51 +2,50 @@
 // Disciplina......: CCET005 - Algoritmos e Linguagem de Programação
 // IFES............: Universidade Federal do Acre
 // Data............: 25/10/2024				Hora:
-// Nome do Programa: Lista4_Exec11.c
+// Nome do Programa: Lista4_Exec14.c
 
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
 #include <math.h>
 int main(void)
-{   int a[4][4],i,j,identidade;
+{   int a[4][4] ,i ,j ,skyfall;
     
-    printf("\n\n    Entre com a matriz A:\n");
+    printf("Entre com a Matriz A: \n");
     for( i=0 ; i<=3 ; i++  )
     {   for( j=0 ; j<=3 ; j++ )
         {
             scanf("%d" , &a[i][j]);
         }
     }
-    identidade = 1;
-    
-    for (i = 0; i <= 3; i++)
-    {
-        for (j = 0; j <= 3; j++)
+    skyfall = 1;
+    for( i=0 ; i<=3 ; i++  )
+    {   for( j=0 ; j<=3 ; j++ )
         {
-            if (i == j)
+            if (((i+j)%2) == 1)
             {
                 if (a[i][j] != 1)
                 {
-                    identidade = 0;
+                    skyfall = 0;
                 }
             }
             else
             {
                 if (a[i][j] != 0)
                 {
-                    identidade = 0;
-                }
+                    skyfall = 0;
+                }  
             }
-        }   
+            
+        }
     }
-    if (identidade == 1)
+    if (skyfall == 1)
     {
-        printf("\n\n    A matriz e identidade");
+        printf("A matriz e SKYFALL\n");
     }
     else
     {
-        printf("\n\n    A matriz nao e identidade");
+        printf("A matriz nao e SKYFALL\n");
     }
     
     getch();

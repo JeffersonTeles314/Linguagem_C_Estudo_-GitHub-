@@ -2,7 +2,7 @@
 // Disciplina......: CCET005 - Algoritmos e Linguagem de Programação
 // IFES............: Universidade Federal do Acre
 // Data............: 25/10/2024				Hora:
-// Nome do Programa: Lista4_Exec8.c
+// Nome do Programa: Lista4_Exec12.c
 
 #include <stdio.h>
 #include <conio.h>
