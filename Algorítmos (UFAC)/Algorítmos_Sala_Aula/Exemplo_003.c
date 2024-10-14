@@ -2,13 +2,12 @@
 #include<stdlib.h>
 #include<math.h>
 #include<locale.h>
-main()
+
+int main(void)
 {
-  float 	a = 314 ,
-            b = 3.14e2,
-            c = 31.4e1;
+  float 	a = 314, b = 3.14e2, c = 31.4e1;
+  printf("\na = %f b = %f c = %f " , a , b , c );
 
-            printf("\n    a = %f              b = %f                 c = %f " , a , b , c );
-
-            getch();
+  getch();
+  return 0;
 }

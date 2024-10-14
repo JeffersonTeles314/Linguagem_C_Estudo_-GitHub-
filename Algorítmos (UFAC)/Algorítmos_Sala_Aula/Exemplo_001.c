@@ -7,7 +7,7 @@ main()
 {
        setlocale(LC_ALL,"portuguese");
 
-       printf("\n\n      Alô Mundo  ");
+       printf("AlÃ´ Mundo");
 
        getch();
 }

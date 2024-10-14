@@ -5,13 +5,13 @@
 main()
 {
     	setlocale(LC_ALL,"portuguese");
-    	int idade;                  // declaração de variável
+    	int idade;                  // DeclaraÃ§Ã£o de VariÃ¡vel
 
      	printf("\n  Digite sua Idade: ");
 
-        scanf("%d" , &idade);                   // Lê a idade
+        scanf("%d" , &idade);                   // LÃª a idade
 
-        printf("\n  Sua idade é de  %d anos " ,  idade);
+        printf("\n  Sua idade ï¿½ de  %d anos " ,  idade);
 
         getch();
 }

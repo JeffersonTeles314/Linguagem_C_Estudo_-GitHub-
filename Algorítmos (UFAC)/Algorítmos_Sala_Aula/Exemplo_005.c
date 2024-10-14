@@ -8,7 +8,7 @@ main()
 
        idade = 40;
 
-       printf("\n    Sua idade é de %d anos" , idade);
+       printf("\n    Sua idade Ã© de %d anos" , idade);
 
        getch();
 }
