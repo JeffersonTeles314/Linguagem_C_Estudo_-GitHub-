@@ -11,12 +11,12 @@ int main(void)
 {   int vetor[20], i,maior;
 
     printf("Entre com o Vetor V:\n");
-    for (i = 0; i <= 20; i++)
+    for (i = 0; i <= 19; i++)
     {
         scanf("%d" , &vetor[i]);
     }
     maior = vetor[0];
-    for (i = 0; i <= 20; i++)
+    for (i = 0; i <= 19; i++)
     {
         if (vetor[i] > maior)
         {

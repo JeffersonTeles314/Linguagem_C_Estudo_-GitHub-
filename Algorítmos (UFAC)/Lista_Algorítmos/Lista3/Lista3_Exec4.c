@@ -22,7 +22,10 @@ int main(void)
     for( i=0 ; i<=3 ; i++)
     {   for( j=0 ; j<=3 ; j++)
         {
-            soma += a[i][j];
+            if (i==j)
+            {
+                soma += a[i][j];
+            }
         }
         printf("\n");
     }
