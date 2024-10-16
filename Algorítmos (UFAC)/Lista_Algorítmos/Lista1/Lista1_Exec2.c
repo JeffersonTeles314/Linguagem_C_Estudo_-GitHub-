@@ -22,18 +22,19 @@ int main(void)
     scanf("%d" , &b);
     printf("Entre com o coeficiente C:");\
     scanf("%d" , &c);
-    delta = (float) (b * b) - 4 * a * c;
+    delta = (float) (pow(b,2)) - (4*a*c);
     if (delta > 0)
     {
-        x1 = (-b + sqrt(delta)) / 2 * a;
-        x2 = (-b - sqrt(delta)) / 2 * a;
+        printf("As raízes da equação são reais e distintas.\n");
+        x1 = (-b + sqrt(delta)) / (2*a);
+        x2 = (-b - sqrt(delta)) / (2*a);
         printf("As raízes da equação são: %f e %f" , x1 , x2);
     }
     else
     {
         if (delta == 0)
         {
-            x1 = -b / 2 * a;
+            x1 = (-b) / (2 * a);
             printf("A raiz da equação é: %f" , x1);
         }
         

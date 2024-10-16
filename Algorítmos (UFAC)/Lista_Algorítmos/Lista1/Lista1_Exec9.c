@@ -13,22 +13,22 @@
 int main(void)
 {
     setlocale(LC_ALL, "Portuguese");
-    int    maior, menor, i;
-    printf("Escreva 10 números inteiros: ");
+    int    maior, menor, i, j;
+    printf("Escreva 10 números inteiros: \n");
 
     scanf("%d", &i);
     maior = i;
     menor = i;
     for (i = 2; i <= 10; i++)
     {
-        scanf("%d", &i);
-        if (i > maior)
+        scanf("%d", &j);
+        if (j > maior)
         {
-            maior = i;
+            maior = j;
         }
-        if (i < menor)
+        if (j < menor)
         {
-            menor = i;
+            menor = j;
         }
     }
     printf("O maior número é: %d \n", maior);

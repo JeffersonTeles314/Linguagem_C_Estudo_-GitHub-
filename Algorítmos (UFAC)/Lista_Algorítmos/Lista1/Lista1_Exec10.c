@@ -15,15 +15,16 @@ int main(void)
     setlocale(LC_ALL, "Portuguese");
     int    n, i, aux, soma;
     float media;
-    printf("Entre com a quantidade de números: ");
+    printf("Entre com a quantidade de números: \n");
     scanf("%d", &n);
     soma = 0;
+    printf("Entre com os números: \n");
     for (i = 1; i <= n; i++)
     {
         scanf("%d", &aux);
         soma += aux;
     }
-    media = soma/n;
+    media = (float)soma/n;
     printf("A média dos números é: %.2f", media);
     
     getch();
