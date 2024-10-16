@@ -9,44 +9,35 @@
 #include <stdlib.h>
 #include <math.h>
 int main(void)
-{   int a[4][4] ,i ,;
+{   int a[20] ,i, j, num, conta, aux, tot_primo;
     
-    printf("Entre com a Matriz A: \n");
-    for( i=0 ; i<=3 ; i++  )
-    {   for( j=0 ; j<=3 ; j++ )
+    printf("Entre com a o Vetor A: \n");
+    for( i=0 ; i<=19 ; i++)
+    {   
+        scanf("%d" , &a[i]);
+    }
+
+    tot_primo = 0;
+    
+    for( i=0 ; i<=19 ; i++)
+    {   
+        num = a[i];
+        conta = 0;
+        for (j = 1; j <= num; j++)
         {
-            scanf("%d" , &a[i][j]);
+            aux = num % j;
+            if (aux==0)
+            {
+                conta++;
+            }
+        }
+        if (conta == 2)
+        {
+            tot_primo++;
         }
     }
-    skyfall = 1;
-    for( i=0 ; i<=3 ; i++  )
-    {   for( j=0 ; j<=3 ; j++ )
-        {
-            if (((i+j)%2) == 1)
-            {
-                if (a[i][j] != 1)
-                {
-                    skyfall = 0;
-                }
-            }
-            else
-            {
-                if (a[i][j] != 0)
-                {
-                    skyfall = 0;
-                }  
-            }
-            
-        }
-    }
-    if (skyfall == 1)
-    {
-        printf("A matriz e SKYFALL\n");
-    }
-    else
-    {
-        printf("A matriz nao e SKYFALL\n");
-    }
+
+    printf("O total de primos = %d",tot_primo);    
     
     getch();
     return 0;
