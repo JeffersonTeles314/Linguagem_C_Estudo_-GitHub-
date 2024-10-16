@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <math.h>
 int main(void)
-{   int a[4][4] ,i ,j ,skyfall;
+{   int a[4][4] ,i ,;
     
     printf("Entre com a Matriz A: \n");
     for( i=0 ; i<=3 ; i++  )

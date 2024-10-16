@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-void main(void)
+int main(void)
 {   int i,aux;
     float soma;
     printf("\n\n    Calculando o somatorio");
@@ -19,5 +19,7 @@ void main(void)
          aux  = aux + 2;
     }
     printf("\n\n   O somatorio = %f " , soma);
+
     getch();
+    return 0;
 }

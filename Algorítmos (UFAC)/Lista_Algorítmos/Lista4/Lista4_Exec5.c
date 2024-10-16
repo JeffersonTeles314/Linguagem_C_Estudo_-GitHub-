@@ -19,7 +19,7 @@ int main(void)
     printf("Calculando o Somatorio\n");
     for(i=1 ; i<=37 ; i++)
     {
-        soma = soma + ((aux1+aux2)/i);
+        soma = soma + ((aux1*aux2)/i);
         aux1--;
         aux2--;
     }

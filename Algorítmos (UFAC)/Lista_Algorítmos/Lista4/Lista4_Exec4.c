@@ -19,7 +19,7 @@ int main(void)
     soma = 0.0;
     for(i=1 ; i<=50 ; i++)
     {
-        soma = soma + (pow(2,i)/aux);
+        soma = soma + (pow(2,i)/(float)aux);
         aux = aux - 1;
     }
     printf("O Somatório é = %f" , soma);

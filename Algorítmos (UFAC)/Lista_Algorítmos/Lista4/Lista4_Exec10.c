@@ -12,15 +12,16 @@ int main(void)
 {   int a[20],i,soma,aux;
     
     printf("\n\n    Entre com o vetor A:\n");
-    for( i=0 ; i<=19 ; i++  )
+    for( i=0 ; i<=19 ; i++)
     {   
         scanf("%d" , &a[i]);
     }
-    aux = 20;
+    aux = 19;
     printf("\n\n    Calculando a soma\n\n");
-    for (i = 1; i <= 10; i++)
+    for (i = 0; i <= 9; i++)
     {
-        soma = soma +pow(a[i] - a[aux],2);
+        soma = soma +pow((a[i] - a[aux]),2);
+        aux = aux - 1;
     }
     printf("\n\n    A soma = %d",soma);
     
